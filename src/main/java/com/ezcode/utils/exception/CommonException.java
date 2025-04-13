@@ -2,7 +2,7 @@ package com.ezcode.utils.exception;
 
 import lombok.Getter;
 
-@Getter
+
 public class CommonException extends RuntimeException {
 
     private static final long serialVersionUID = 1L;
@@ -18,4 +18,7 @@ public class CommonException extends RuntimeException {
         this.statusCode = statusCode;
     }
 
+    public int getStatusCode() {
+        return statusCode;
+    }
 }
