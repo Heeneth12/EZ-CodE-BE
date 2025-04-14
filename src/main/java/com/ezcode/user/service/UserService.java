@@ -8,8 +8,10 @@ import com.ezcode.user.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 
@@ -34,7 +36,7 @@ public class UserService {
 //                .userType(request.getUserType())
 //                .registeredAt(LocalDateTime.now())
 //                .build();
-
+//
 //        userRepository.save(newUser);
         return "User registered successfully";
     }

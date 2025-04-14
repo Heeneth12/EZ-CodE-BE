@@ -1,13 +1,10 @@
-package com.ezcode.user.dto;
-
+package com.ezcode.auth.dto;
 import com.ezcode.user.entity.UserType;
-import lombok.Data;
-import lombok.Getter;
 
-@Data
-public class UserDTO {
+public class AuthRegister {
     private String email;
     private String fullName;
+    private String password;
     private UserType userType;
 
     public String getEmail() {
@@ -24,6 +21,14 @@ public class UserDTO {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public UserType getUserType() {
